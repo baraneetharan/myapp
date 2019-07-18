@@ -14,6 +14,7 @@ public class Car {
 @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int regno;
     private String brand;
+    private Float price;
 
     /**
      * @return the regno
@@ -38,5 +39,17 @@ public class Car {
      */
     public void setBrand(String brand) {
         this.brand = brand;
+    }
+    /**
+     * @return the price
+     */
+    public Float getPrice() {
+        return price;
+    }
+    /**
+     * @param price the price to set
+     */
+    public void setPrice(Float price) {
+        this.price = price;
     }
 }
