@@ -2,5 +2,7 @@ language: java
 sudo: false # faster builds
 before_install:
 - chmod +x mvnw
+after_success:
+- bash <(curl -s https://codecov.io/bash)
 notifications:
   webhooks: https://outlook.office.com/webhook/0e559c63-238c-4e41-9e2a-b99608831f5f@a386f7a5-d3d8-4c54-8566-a4d4b20193f5/TravisCI/1392bfc8283a46769201ab5e6b93d989/fd81eabe-c767-431f-b5d0-67af2782d7ba
